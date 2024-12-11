@@ -1,0 +1,276 @@
+/* Bendri nustatymai */
+.video{
+    width: 100%; /* Nuotrauka užpildo plotį */
+    height: 100%; /* Nuotrauka užpildo aukštį */
+    object-fit: cover; /* Nuotraukos apkarpymas, kad užpildytų langą proporcingai */
+}
+.sumo_nuotrauka{
+    width: 100%; /* Nuotrauka užpildo plotį */
+    height: 100%; /* Nuotrauka užpildo aukštį */
+    object-fit: cover;
+}
+
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigacijos juostos stilius */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #121212; /* Tamsiai pilka spalva */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Švelnus šešėlis */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logotipas */
+.logo-container .logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Navigacijos nuorodos */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent; /* Linija po nuoroda */
+}
+
+.nav-link:hover {
+    color: red; /* Raudona spalva užvedus */
+    border-bottom: 2px solid red;
+}
+
+:target +.nav-link {
+    color: red;
+    border-bottom: 2px solid red; /* Aktyvios nuorodos stilius */
+}
+
+/* Poraštės stiliai */
+.footer-container {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .main-header,
+body.dark-mode .footer-container {
+    background-color: #111;
+}
+
+body.dark-mode .nav-link {
+    color: white;
+}
+
+body.dark-mode .nav-link:hover {
+    color: red;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #121212;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background-color: red;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Du stulpeliai */
+    gap: 10px; /* Tarpai tarp elementų */
+    background-color: #f80000; /* Fonas konteineriui */
+    padding: 10px;
+    border-radius: 10px; 
+
+}
+
+.grid-item {
+    background-color: rgba(233, 220, 220, 0.8); /* Pusiau skaidrus fonas */
+    border: 1px solid rgba(0, 0, 0, 0.8); /* Rėmelis */
+    display: flex;
+    justify-content: center; /* Horizontalus lygiavimas */
+    align-items: center; /* Vertikalus lygiavimas */
+    overflow: hidden; /* Nepersistengiančių vaizdų kirpimas */
+}
+
+.grid-item img {
+    width: 100%; /* Nuotrauka užpildo plotį */
+    height: 100%; /* Nuotrauka užpildo aukštį */
+    object-fit: cover; /* Nuotraukos apkarpymas, kad užpildytų langą proporcingai */
+}
+
+.content-container {
+    display: flex; /* Naudoja flexbox išdėstymui */
+    align-items: center; /* Centruoja tekstą ir paveikslėlį vertikaliai */
+    gap: 20px; /* Atstumas tarp teksto ir nuotraukos */
+    padding: 20px;
+}
+
+.text-section {
+    max-width: 50%; /* Apriboja teksto plotį */
+}
+
+.text-section h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text-section .read-more {
+    font-size: 14px;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+        border-radius: 10px; 
+
+}
+
+
+
+.image-section img {
+    max-width: 100%; /* Nuotrauka užima visą jai skirtą vietą */
+    height: auto; /* Automatinis aukštis pagal plotį */
+    border-radius: 5px; /* Švelniai užapvalinti kampai */
+    border-radius: 10px; 
+
+}
+
+.about h1{
+    text-align: center; /* Centruoja tekstą horizontaliai */
+    margin: 20px auto;  /* Automatiškai suderina tarpą virš ir apačioje */
+    font-size: 36px;    /* Pasirinktinai, padidina teksto dydį */
+    font-weight: bold;  /* Padaro tekstą paryškintu */
+    color: black; 
+    margin: 0px; 
+    padding: 15px; 
+    border: 2px solid red; 
+    background-color: #f03b3b; 
+    border-radius: 10px; 
+}
+.services h1{
+    text-align: center; /* Centruoja tekstą horizontaliai */
+    margin: 20px auto;  /* Automatiškai suderina tarpą virš ir apačioje */
+    font-size: 36px;    /* Pasirinktinai, padidina teksto dydį */
+    font-weight: bold;  /* Padaro tekstą paryškintu */
+    color: black; 
+    margin: 0px; 
+    padding: 15px; 
+    border: 2px solid red; 
+    background-color: #f03b3b; 
+    border-radius: 10px; 
+    margin-top: 6px;
+    
+}
+
+.gallery {
+    text-align: center; /* Centruoja tekstą horizontaliai */
+    margin: 20px auto;  /* Automatiškai suderina tarpą virš ir apačioje */
+    font-size: 36px;    /* Pasirinktinai, padidina teksto dydį */
+    font-weight: bold;  /* Padaro tekstą paryškintu */
+    color: black; 
+    margin: 0px; 
+    padding: 15px; 
+    border: 2px solid red; 
+    background-color: #f03b3b; 
+    border-radius: 10px; 
+    margin-bottom: 6px;
+}
+
+
+
+/* Bendri nustatymai */
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: #f0f0f0; /* Šviesus fonas */
+    overflow: hidden;
+  }
+  
+  /* Paveikslėlio nustatymai */
+  .car-image {
+    width: 400px; /* Paveikslėlio dydis */
+    height: auto;
+    animation: move-car 2s ease-in-out infinite alternate;
+  }
+  
+  /* Automobiliuko judėjimo animacija */
+  @keyframes move-car {
+    0% {
+      transform: translateX(-700px); /* Judėjimas į kairę */
+    }
+    100% {
+      transform: translateX(700px); /* Judėjimas į dešinę */
+    }
+  }
+
+.clock{
+    text-align: center;
+    margin:50px;
+    font-size: 50px;  }
+  
+.laikrodis{
+    text-align: center;
+    margin: 0px; 
+    padding: 15px; 
+    border: 2px solid red; 
+    background-color: #f03b3b; 
+    border-radius: 10px;
+
+}
+
+.person_info{
+    text-align: center;
+    margin: 0px; 
+    padding: 15px; 
+    border: 2px solid red; 
+    background-color: #f03b3b; 
+    border-radius: 10px;
+}

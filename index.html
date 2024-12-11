@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <title>Ferrari Svetainė</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mano puslapis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyle.css">
+    <script src="indexjava.js" defer></script>
+</head>
+<body>
+    <!-- Antraštė -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="https://www.ferrari.com/en-LT">
+                    <img id="logo" src="Katalogas/ferary.webp" alt="Ferrari logotipas" class="logo">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#sport_cars" class="nav-link">Sport cars </a>
+                <a href="#history" class="nav-link">History</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Turinys -->
+    <main>
+        <!-- Apie sekcija -->
+        <section id="about" class="about">
+            <video class="video" autoplay loop muted>
+                <source src="Katalogas/ferrari_video.mp4" type="video/mp4">
+                Jūsų naršyklė nepalaiko šio video formato.
+            </video>
+            <h1>About</h1>
+            <div class="content-container">
+                <div class="text-section">
+                    <h2>READY TO FIGHT TO THE END</h2>
+                    <p>I'VE ALWAYS BELIEVED THAT YOU SHOULD NEVER, EVER GIVE UP AND YOU SHOULD ALWAYS KEEP FIGHTING EVEN WHEN THERE'S ONLY THE SLIGHTEST CHANCE.</p>
+                    <p>Michael Schumacher</p>
+                </div>
+                <div class="image-section">
+                    <img src="Katalogas/Sumacher.jpg" alt="Ferrari Driver">
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerija sekcija -->
+        <section  class="grid-section">
+            <h1 id="sport_cars" class="gallery">Sport cars</h1>
+            <div class="grid-container">
+                <div class="grid-item"><img src="Katalogas/Ferari_1.jpg" alt="Ferrari 1"></div>
+                <div class="grid-item"><img src="Katalogas/ferray_nature.jpg" alt="Ferrari 2"></div>
+                <div class="grid-item"><img src="Katalogas/ferary_3.jpg" alt="Ferrari 3"></div>
+                <div class="grid-item"><img src="Katalogas/all_formula.jpg" alt="Ferrari Schumacher"></div>
+            </div>
+        </section>
+
+        <!-- Istorijos sekcija -->
+        <section id="history"class="services">
+            <h1>History</h1>
+            <div class="content-container">
+                <div class="text-section">
+                    <h2>FERRARI HISTORY</h2>
+                    <p>Ferrari, founded in 1939 by Enzo Ferrari, is an iconic Italian luxury sports car manufacturer, renowned for performance, innovation, and racing excellence.</p>
+                </div>
+                <div class="image-section">
+                    <img src="Katalogas/ferari_2.webp" alt="Ferrari History">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="mathml">
+        <math display="block">
+            <msubsup>
+                <mo>&int;</mo> 
+                <mrow>
+                <msub>
+                <mi>D</mi>
+                </msub>
+                </mrow>
+                <mrow>
+                <msub>
+                </msub>
+                </mrow>
+                </msubsup>
+                <mo>(</mo>
+                <mo>&nabla;</mo>
+                <mo>&#x22C5;</mo>
+                <mi>f</mi>
+                <mo>)</mo>
+                <mo>dV</mo>
+                <mo>=</mo>
+                <mfenced separators=' '>
+                    <msubsup>
+                        <mo>&int;</mo> 
+                        <mrow>
+                        <msub>
+                        <mi>&#x2202;D</mi>
+                        </msub>
+                        </mrow>
+                        <mrow>
+                        <msub>
+                        </msub>
+                        </mrow>
+                        </msubsup>
+                        <mo>F</mo>
+                    <mo>&#x22C5;</mo>
+                    <mo>ndS</mo>
+                   
+                
+                </math>
+    </section>
+
+    <section>
+        <div class="svg-container">
+            <!-- Automobiliuko paveikslėlis -->
+            <img class="car-image" src="Katalogas/mini_ferrary.jpg" alt="Car"/>
+            
+        </div>
+    </section>
+        <h1 class="laikrodis">Laikrodis</h1>
+        <div class="clock" id="clock">
+            00:00:00
+        </div> <!-- Laikas čia bus atvaizduojamas -->
+        <script src="script.js"></script>
+    <section class="person_info">
+        <footer>
+            <h1>Kontaktų Forma</h1>
+            <form id="contactForm">
+                <p>
+                    <label for="name">Vardas:</label>
+                    <input type="text" id="name" required>
+                </p>
+                <p>
+                    <label for="surname">Pavardė:</label>
+                    <input type="text" id="surname" required>
+                </p>
+                <p>
+                    <label for="email">El. paštas:</label>
+                    <input type="email" id="email" required>
+                    <div id="emailError" class="error"></div>
+                </p>
+                <p>
+                    <label for="phone">Telefonas:</label>
+                    <input type="tel" id="phone" pattern="^\+?[0-9]{9,15}$" required>
+                    <div id="phoneError" class="error"></div>
+                </p>
+                <p>
+                    <label for="address">Adresas:</label>
+                    <input type="text" id="address" required>
+                    <div id="addressError" class="error"></div>
+                </p>
+                <p>
+                    <label for="feature1">Požymis 1 (tik skaičiai):</label>
+                    <input type="number" id="feature1" required>
+                </p>
+                <p>
+                    <label for="feature2">Požymis 2 (tik skaičiai):</label>
+                    <input type="number" id="feature2" required>
+                </p>
+                <p>
+                    <label for="feature3">Požymis 3 (tik skaičiai):</label>
+                    <input type="number" id="feature3" required>
+                </p>
+                <p>
+                    <label for="feature4">Požymis 4 (tik skaičiai):</label>
+                    <input type="number" id="feature4" required>
+                </p>
+                <p>
+                    <label for="feature5">Požymis 5 (tik skaičiai):</label>
+                    <input type="number" id="feature5" required>
+                </p>
+                <p>
+                    <button type="button" id="submitBtn">Išsaugoti</button>
+                </p>
+            </form>
+            
+            <div id="output" class="output"></div>
+            
+            <script src="script.js"></script>
+        </footer>
+
+    </section>
+
+
+
+    <!-- Dark mode jungiklis -->
+    <button class="dark-mode-toggle" id="toggleDark">Dark Mode</button>
+
+    <!-- Poraštė -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="Katalogas/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="Katalogas/twitter-icon.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="Katalogas/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+            <p>Kontaktinė informacija: <a href="mailto:ervinas.trukan@stud.vilniustech.lt">ervinas.trukan@stud.vilniustech.lt</a></p>
+            <p>&copy; 2024 Ervinas Trukanas</p>
+        </div>
+    </footer>
+</body>
+</html>
